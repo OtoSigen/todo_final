@@ -1,0 +1,56 @@
+.footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.button__wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.button {
+  background: white;
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font: normal normal 16px/18px Roboto, sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.button:hover {
+  background: #356eff;
+  border-radius: 23px;
+  color: #fff;
+}
+
+.count_item {
+  padding-left: 10px;
+  color: #356eff;
+  font-weight: bold;
+  margin: 0;
+}
+
+.button_active .count_item {
+  color: #fff;
+}
+
+.button:hover .count_item {
+  color: #fff;
+}
+
+.button_active {
+  background: #356eff;
+  border-radius: 23px;
+  color: #fff;
+}
+
+@media (max-width: 660px) {
+  .button {
+    font-size: 14px;
+  }
+}
